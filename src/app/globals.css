@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #FFF5F5;
+  --foreground: #9B6B6B;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  @apply font-body antialiased;
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
+}
+
+.shadow-soft {
+  box-shadow: 0 10px 30px -10px rgba(155, 107, 107, 0.15);
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
